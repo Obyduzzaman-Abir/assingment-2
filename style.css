@@ -8,10 +8,7 @@ body{
 }
 
  /* ------------------
- header and some basic css styles 
-
-
- 
+ header and some basic css styles  
  ----------------------*/
 .header{
     background-color:blueviolet;
@@ -106,7 +103,9 @@ font-size: 28px;
  players card and detail styles start
  -------------------------------- ---*/
 
-/* footer-section */
+/*-------------------
+ footer-section  star
+ --------------------*/
 .footer{
     display: flex;
     flex-direction: column;
@@ -130,11 +129,19 @@ font-size: 28px;
     margin-left: 10px;
 }
 
+/*-------------------
+ footer-section  star
+ --------------------*/
 
-/* mobile responsive section  */
-/* media Quaries */
 
-/* mobile-device */
+
+/*-------------
+ media Quaries 
+----------------*/
+
+/*--------------- 
+mobile-device 
+-----------------*/
 @media only screen and (max-width:680px) and (max-width:688px){
 
     .h1{
@@ -159,3 +166,4 @@ font-size: 28px;
 
 
 }
+ /* css styls close */
