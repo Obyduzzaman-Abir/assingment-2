@@ -15,6 +15,7 @@ body{
  ----------------------*/
 .header{
     background-color:blueviolet;
+    color: black;
 }
 
 
@@ -31,7 +32,7 @@ body{
 }
 
 .half-width{
-    width: 40%;
+    width: 50%;
     padding: 2%;
 }
 
@@ -65,30 +66,26 @@ transition: padding 2s, border-radius 2s ease-in,color 2s;
  -------------------------------- ---*/
  
 
- .players{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    margin-top: 60px;
-    margin-bottom: 80px;
-    margin-left:70px;
-    margin-right: 50px;
-    grid-row-gap: 30px;
-    grid-column-gap:30px;
-   
+.players{
+display: grid;
+grid-template-columns: repeat(3,330px);
+justify-content: center;
+grid-gap: 40px;
+grid-column-gap: 80px; ;
+margin-top: 80px;
+margin-bottom: 50px;
 }
-
 .player{
-    width: 330px;
-    height: 470px;
-    margin: 10px;
+    width: 325px;
+    height: 450px;
     padding: 15px;
     background-color:#FFFFFF;
     box-shadow:20px 10px 40px gray;
 }
 
 .players .banner img{
-  width: 280px;
-  height: 220px;
+  width: 275px;
+  height: 200px;
   padding: 10px;
   text-align: center;
   margin: auto;
@@ -123,12 +120,14 @@ font-size: 28px;
 }
 .fab{
    margin:auto;
+   margin-left: 20px;
 }
 
 .copy-right{
     font-weight: 400;
     font: 25px;
     margin-bottom: 80px;
+    margin-left: 10px;
 }
 
 
@@ -136,7 +135,7 @@ font-size: 28px;
 /* media Quaries */
 
 /* mobile-device */
-@media only screen and (max-width:680px){
+@media only screen and (max-width:680px) and (max-width:688px){
 
     .h1{
         display: block;
@@ -145,6 +144,10 @@ font-size: 28px;
         flex-direction: column;
         text-align: center;
         justify-content: center;
+    }
+
+    .half-width{
+        width: 80%;
     }
 
    
