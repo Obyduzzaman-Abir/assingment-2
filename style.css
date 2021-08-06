@@ -9,25 +9,24 @@ body{
 
  /* ------------------
  header and some basic css styles 
+
+
+ 
  ----------------------*/
 .header{
     background-color:blueviolet;
 }
 
-h1{
-    font-size: 40px;
-    line-height: 25%;
-    margin-bottom: 10%;
-}
+
 
 .head{
-    margin-top: 10%;
+    margin: 10%;
    
 }
 .flex{
     display: flex;
     text-align: center;
-    justify-content: space-evenly
+  
 
 }
 
@@ -59,39 +58,38 @@ transition: padding 2s, border-radius 2s ease-in,color 2s;
 /*-----------------------
  header section styles end 
  ------------------------- */
- .container{
-    background-color: #ffff;
-    padding: 20px;
-    margin-left: 150px;
-    margin-right: 150px;
-    margin-top: 70px;
-    margin-bottom: 70px;
-   
-}
 
+
+ /*--------------------------- -------
+ players card and detail styles start
+ -------------------------------- ---*/
+ 
 
  .players{
     display: grid;
-    grid-template-columns: repeat(3,1fr);
-    gap: 10px;
-    text-align: center;
-    align-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 60px;
+    margin-bottom: 80px;
+    margin-left:70px;
+    margin-right: 50px;
+    grid-row-gap: 30px;
+    grid-column-gap:30px;
    
 }
 
 .player{
-    width: 350px;
-    height: 490px;
-    margin: 15px;
-    padding: 20px;
+    width: 330px;
+    height: 470px;
+    margin: 10px;
+    padding: 15px;
     background-color:#FFFFFF;
     box-shadow:20px 10px 40px gray;
 }
 
 .players .banner img{
-  width: 300px;
-  height: 240px;
-  padding: 15px;
+  width: 280px;
+  height: 220px;
+  padding: 10px;
   text-align: center;
   margin: auto;
  
@@ -107,6 +105,10 @@ font-size: 28px;
     font-weight: 200;
 }
 
+/*--------------------------- -------
+ players card and detail styles start
+ -------------------------------- ---*/
+
 /* footer-section */
 .footer{
     display: flex;
@@ -116,15 +118,41 @@ font-size: 28px;
 }
 
 .logo a img{
-    height: 80px;
+    height: 70px;
     padding: 2%;
 }
 .fab{
-   margin-right: 15px;
+   margin:auto;
 }
 
 .copy-right{
     font-weight: 400;
     font: 25px;
-    margin-bottom: 100px;
+    margin-bottom: 80px;
+}
+
+
+/* mobile responsive section  */
+/* media Quaries */
+
+/* mobile-device */
+@media only screen and (max-width:680px){
+
+    .h1{
+        display: block;
+    }
+    .flex{
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+    }
+
+   
+    .players{
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+        margin: auto;
+    }
+
+
 }
