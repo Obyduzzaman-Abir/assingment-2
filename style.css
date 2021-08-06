@@ -7,8 +7,10 @@ body{
     padding: 0%;
 }
 
-
-.container{
+ /* ------------------
+ header and some basic css styles 
+ ----------------------*/
+.header{
     background-color:blueviolet;
 }
 
@@ -16,24 +18,6 @@ h1{
     font-size: 40px;
     line-height: 25%;
     margin-bottom: 10%;
-}
-
-h2{
-     font-size: 35px;
-}
-
-h3{
-    font-size: 20px;
-    font-weight: 900;
-    color: black;
-}
-
-p{
-    font-size: 20px;
-}
-.color{
-    color: orangered;
-    
 }
 
 .head{
@@ -70,4 +54,77 @@ transition: padding 2s, border-radius 2s ease-in,color 2s;
    padding: 30px 40px;
    border-radius:30px;;
    color:black;
+}
+
+/*-----------------------
+ header section styles end 
+ ------------------------- */
+ .container{
+    background-color: #ffff;
+    padding: 20px;
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-top: 70px;
+    margin-bottom: 70px;
+   
+}
+
+
+ .players{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 10px;
+    text-align: center;
+    align-items: center;
+   
+}
+
+.player{
+    width: 350px;
+    height: 490px;
+    margin: 15px;
+    padding: 20px;
+    background-color:#FFFFFF;
+    box-shadow:20px 10px 40px gray;
+}
+
+.players .banner img{
+  width: 300px;
+  height: 240px;
+  padding: 15px;
+  text-align: center;
+  margin: auto;
+ 
+}
+
+.player-title{
+font-style: bold;
+font-size: 28px;
+}
+
+.player-info{
+    font-size: 16px;
+    font-weight: 200;
+}
+
+/* footer-section */
+.footer{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+.logo a img{
+    height: 80px;
+    padding: 2%;
+}
+.fab{
+   margin-right: 15px;
+}
+
+.copy-right{
+    font-weight: 400;
+    font: 25px;
+    margin-bottom: 100px;
 }
